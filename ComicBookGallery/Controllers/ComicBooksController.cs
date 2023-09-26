@@ -2,15 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
+
 
 
 namespace ComicBookGallery.Controllers
 {
-    public class ComicBooksController 
+    public class ComicBooksController : Controller
     {
-        public string Detail()
+        public ActionResult Detail()
         {
-            return "hello from controller";
+            return View();
         }
     }
 }
